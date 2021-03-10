@@ -1,0 +1,68 @@
+body {
+    background-color:indianred;
+}
+
+.box {
+    background-color:blue;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    margin: auto;
+    bottom: 10px;
+}
+
+.box2 {
+    background-color: red;
+    width:  115px;
+    height: 115px;
+    position: relative;
+    margin: auto;
+    bottom: 350px;
+    border-radius: 50%;
+    animation: redlight;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes redlight {
+    0% {top: -500px;}
+    100% {top: -350px;}
+}
+
+.yellowlight {
+    background-color: yellow;
+    width: 115px;
+    height: 115px;
+    position: relative;
+    margin: auto;
+    bottom: 350px;
+    border-radius: 50%;
+    transition-duration: 3s;
+    
+    
+}
+
+.yellowlight:hover {
+    transform: rotateY(180deg);
+}
+
+.greenlightcircle {
+    background-color: green;
+    width: 110px;
+    height: 110px;
+    position: relative;
+    margin: auto;
+    border-radius: 50%;
+    bottom: 350px;
+    opacity: 0;
+    animation-name: greenlight;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes greenlight {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
